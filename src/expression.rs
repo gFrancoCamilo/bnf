@@ -16,7 +16,7 @@ use serde::{Deserialize, Serialize};
 #[derive(Clone, Debug, Default, Eq, Hash, PartialEq, PartialOrd, Ord)]
 #[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
 pub struct Expression {
-    pub(crate) terms: Vec<Term>,
+    pub terms: Vec<Term>,
 }
 
 impl Expression {
