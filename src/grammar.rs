@@ -213,7 +213,7 @@ impl fmt::Display for MermaidParseTree<'_> {
 #[derive(Clone, Default, Debug, Eq, Hash, PartialEq)]
 #[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
 pub struct Grammar {
-    productions: Vec<Production>,
+    pub productions: Vec<Production>,
 }
 
 impl Grammar {
