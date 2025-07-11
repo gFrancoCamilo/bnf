@@ -20,7 +20,7 @@ use std::str::FromStr;
 pub struct Production {
     /// The "left hand side" of the production, i.e. "lhs -> rhs ..."
     pub lhs: Term,
-    rhs: Vec<Expression>,
+    pub rhs: Vec<Expression>,
 }
 
 impl Production {
